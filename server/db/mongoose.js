@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 mongoose.Promise = global.Promise;
 
-const MONGOLAB_URI = process.env.MONGOLAB_URI || "mongodb://localhost:27017/TodoApp";
+const MONGOLAB_URI = process.env.MONGOLAB_URI;
 
 mongoose.connect(MONGOLAB_URI);
 
